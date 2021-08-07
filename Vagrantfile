@@ -103,6 +103,7 @@ Vagrant.configure("2") do |config|
     # 1. General update
     apk update && apk upgrade
     apk upgrade virtulbox-guest-additions --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community
+    apk add virtualbox-guest-modules-virt
     apk add tmux
     # 2. https://wiki.alpinelinux.org/wiki/Docker
     apk add docker
